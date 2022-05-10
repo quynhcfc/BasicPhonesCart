@@ -22,19 +22,19 @@ export default class ModalGioHang extends Component {
             <button
               className="btn btn-success mx-2"
               onClick={() => {
-                this.props.handleThayDoiSoLuong(sanPham.maSP, tangSP);
+                this.props.handleThayDoiSoLuong(sanPham.maSP, giamSP);
               }}
             >
-              +
+              -
             </button>
             {sanPham.soLuong}
             <button
               className="btn btn-danger mx-2 "
               onClick={() => {
-                this.props.handleThayDoiSoLuong(sanPham.maSP, giamSP);
+                this.props.handleThayDoiSoLuong(sanPham.maSP, tangSP);
               }}
             >
-              -
+              +
             </button>
           </td>
           <td>{(sanPham.giaBan * sanPham.soLuong).toLocaleString()}</td>

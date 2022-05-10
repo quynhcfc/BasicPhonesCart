@@ -56,7 +56,7 @@ export default class BaiTapGioHang extends Component {
   render() {
     return (
       <div>
-        <div className="display-4">Bài tập giỏ hàng</div>
+        <div className="display-4 my-2">Bài tập giỏ hàng</div>
         <ModalGioHang
           gioHang={this.state.gioHang}
           handleThayDoiSoLuong={this.handleThayDoiSoLuong}
