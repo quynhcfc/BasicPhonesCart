@@ -52,7 +52,7 @@ export default class ModalGioHang extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="my-3">
           {/* Button trigger modal */}
           <button
             type="button"
