@@ -20,7 +20,7 @@ export default class ModalGioHang extends Component {
           <td>{sanPham.giaBan.toLocaleString()}</td>
           <td>
             <button
-              className="btn btn-success mx-2"
+              className="btn btn-danger mx-2"
               onClick={() => {
                 this.props.handleThayDoiSoLuong(sanPham.maSP, giamSP);
               }}
@@ -29,7 +29,7 @@ export default class ModalGioHang extends Component {
             </button>
             {sanPham.soLuong}
             <button
-              className="btn btn-danger mx-2 "
+              className="btn btn-success mx-2 "
               onClick={() => {
                 this.props.handleThayDoiSoLuong(sanPham.maSP, tangSP);
               }}
