@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
-export default class ChiTietSanPham extends Component {
+class ChiTietSanPham extends Component {
   render() {
     let { hinhAnh, tenSP, manHinh, heDieuHanh, cameraTruoc, cameraSau } =
-      this.props.chiTietTungSP;
+      this.props.listChiTietSP;
     return (
       <div className="container">
         <div className="row mx-0 py-3 border">
@@ -42,3 +43,11 @@ export default class ChiTietSanPham extends Component {
     );
   }
 }
+
+let mapStateToProps = (state) => {
+  return {
+    listChiTietSP: state.sanPham.chiTietSP,
+  };
+};
+
+export default connect(mapStateToProps)(ChiTietSanPham);

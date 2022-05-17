@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 const tangSP = 1;
 const giamSP = -1;
 
-export default class ModalGioHang extends Component {
+class ModalGioHang extends Component {
   renderGioHang = () => {
     return this.props.gioHang.map((sanPham) => {
       return (
@@ -126,3 +127,11 @@ export default class ModalGioHang extends Component {
     );
   }
 }
+
+let mapStateToProps = (state) => {
+  return {
+    gioHang: state.sanPham.gioHang,
+  };
+};
+
+export default connect(mapStateToProps)(ModalGioHang);

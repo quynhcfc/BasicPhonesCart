@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { THEM_GIO_HANG, XEM_CHI_TIET } from "./redux/constants/constants";
 
-export default class ItemSanPham extends Component {
+class ItemSanPham extends Component {
   render() {
     let { hinhAnh, giaBan, tenSP } = this.props.item;
     return (
@@ -35,3 +37,22 @@ export default class ItemSanPham extends Component {
     );
   }
 }
+
+let mapDispatchToProps = (dispatch) => {
+  return {
+    handleXemChiTietSP: (sanPham) => {
+      dispatch({
+        type: XEM_CHI_TIET,
+        payload: sanPham,
+      });
+    },
+    handleThemVaoGioHang: (sanPham) => {
+      dispatch({
+        type: THEM_GIO_HANG,
+        payload: sanPham,
+      });
+    },
+  };
+};
+
+export default connect(null, mapDispatchToProps)(ItemSanPham);

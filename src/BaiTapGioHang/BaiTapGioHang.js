@@ -11,31 +11,6 @@ export default class BaiTapGioHang extends Component {
     gioHang: [],
   };
 
-  handleChiTietSP = (sanPham) => {
-    this.setState({
-      chiTietSP: sanPham,
-    });
-  };
-
-  handleThemSP = (sanPham) => {
-    let newGioHang = [...this.state.gioHang];
-
-    let indexSP = this.state.gioHang.findIndex((index) => {
-      return index.maSP === sanPham.maSP;
-    });
-
-    if (indexSP == -1) {
-      let spGioHang = { ...sanPham, soLuong: 1 };
-      newGioHang.push(spGioHang);
-    } else {
-      newGioHang[indexSP].soLuong++;
-    }
-
-    this.setState({
-      gioHang: newGioHang,
-    });
-  };
-
   handleThayDoiSoLuong = (idSP, giaTri) => {
     let gioHangCopy = [...this.state.gioHang];
 
@@ -57,16 +32,9 @@ export default class BaiTapGioHang extends Component {
     return (
       <div>
         <div className="display-4 my-2">Bài tập giỏ hàng</div>
-        <ModalGioHang
-          gioHang={this.state.gioHang}
-          handleThayDoiSoLuong={this.handleThayDoiSoLuong}
-        />
-        <DanhSachSanPham
-          dataSP={dataPhones}
-          handleXemChiTietSP={this.handleChiTietSP}
-          handleThemVaoGioHang={this.handleThemSP}
-        />
-        <ChiTietSanPham chiTietTungSP={this.state.chiTietSP} />
+        <ModalGioHang handleThayDoiSoLuong={this.handleThayDoiSoLuong} />
+        <DanhSachSanPham />
+        <ChiTietSanPham />
       </div>
     );
   }

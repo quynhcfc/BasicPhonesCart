@@ -1,14 +1,14 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import ItemSanPham from "./ItemSanPham";
 
-export default class DanhSachSanPham extends Component {
-  handleDanhSachSanPham = () => {
-    return this.props.dataSP.map((item) => {
+class DanhSachSanPham extends Component {
+  renderDanhSachSanPham = () => {
+    return this.props.danhSachSanPham?.map((item, index) => {
       return (
         <ItemSanPham
           item={item}
-          handleXemChiTietSP={this.props.handleXemChiTietSP}
-          handleThemVaoGioHang={this.props.handleThemVaoGioHang}
+          key={index}
           handleThayDoiSoLuong={this.props.handleThayDoiSoLuong}
         />
       );
@@ -19,9 +19,17 @@ export default class DanhSachSanPham extends Component {
     return (
       <div className="container">
         <div className="d-flex justify-content-between flex-wrap">
-          {this.handleDanhSachSanPham()}
+          {this.renderDanhSachSanPham()}
         </div>
       </div>
     );
   }
 }
+
+let mapStateToProps = (state) => {
+  return {
+    danhSachSanPham: state.sanPham.data,
+  };
+};
+
+export default connect(mapStateToProps)(DanhSachSanPham);
