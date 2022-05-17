@@ -18,9 +18,7 @@ class DanhSachSanPham extends Component {
   render() {
     return (
       <div className="container">
-        <div className="d-flex justify-content-between flex-wrap">
-          {this.renderDanhSachSanPham()}
-        </div>
+        <div className="row mx-0">{this.renderDanhSachSanPham()}</div>
       </div>
     );
   }
