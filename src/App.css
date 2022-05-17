@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.img-phone-scale {
+  transition: all 1s;
+  cursor: pointer;
+}
+.img-phone-scale:hover {
+  transform: scale(1.1);
+}

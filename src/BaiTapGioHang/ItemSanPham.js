@@ -7,12 +7,15 @@ class ItemSanPham extends Component {
     let { hinhAnh, giaBan, tenSP } = this.props.item;
     return (
       <div className="col-4">
-        <div className="card pt-2 my-3">
+        <div className="card pt-3 my-3">
           <img
-            className="card-img-top mx-auto"
+            className="card-img-top mx-auto img-phone-scale"
             src={hinhAnh}
             alt="Card image cap"
-            style={{ width: "50%", height: "100%", objectFit: "cover" }}
+            style={{ width: "50%", height: "200px", objectFit: "cover" }}
+            onClick={() => {
+              this.props.handleXemChiTietSP(this.props.item);
+            }}
           />
           <div className="card-body">
             <h5 className="card-title">{tenSP}</h5>

@@ -97,12 +97,12 @@ class ModalGioHang extends Component {
                 <div className="modal-body">
                   <table className="table">
                     <thead>
-                      <td>Mã SP</td>
-                      <td>Hình ảnh</td>
-                      <td>Tên sản phẩm</td>
-                      <td>Giá (vnđ)</td>
-                      <td>Số lượng</td>
-                      <td>Thành tiền (vnđ)</td>
+                      <td className="font-weight-bold">Mã SP</td>
+                      <td className="font-weight-bold">Hình ảnh</td>
+                      <td className="font-weight-bold">Tên sản phẩm</td>
+                      <td className="font-weight-bold">Giá (vnđ)</td>
+                      <td className="font-weight-bold">Số lượng</td>
+                      <td className="font-weight-bold">Thành tiền (vnđ)</td>
                     </thead>
                     <tbody>{this.renderGioHang()}</tbody>
                   </table>
@@ -115,7 +115,7 @@ class ModalGioHang extends Component {
                   >
                     Đóng
                   </button>
-                  <button type="button" className="btn btn-primary">
+                  <button type="button" className="btn btn-danger">
                     Mua tất cả
                   </button>
                 </div>

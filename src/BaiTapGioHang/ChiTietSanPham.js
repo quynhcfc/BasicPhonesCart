@@ -16,23 +16,33 @@ class ChiTietSanPham extends Component {
             <table className="table text-center">
               <tbody>
                 <tr>
-                  <td className="col-3">Tên sản phẩm:</td>
+                  <td className="col-3 text-left font-weight-bold">
+                    Tên sản phẩm:
+                  </td>
                   <td className="col-5">{tenSP}</td>
                 </tr>
                 <tr>
-                  <td className="col-3">Màn hình:</td>
+                  <td className="col-3 text-left font-weight-bold">
+                    Màn hình:
+                  </td>
                   <td className="col-5">{manHinh}</td>
                 </tr>
                 <tr>
-                  <td className="col-3">Hệ điều hành:</td>
+                  <td className="col-3 text-left font-weight-bold">
+                    Hệ điều hành:
+                  </td>
                   <td className="col-5">{heDieuHanh}</td>
                 </tr>
                 <tr>
-                  <td className="col-3">Camera trước:</td>
+                  <td className="col-3 text-left font-weight-bold">
+                    Camera trước:
+                  </td>
                   <td className="col-5">{cameraTruoc}</td>
                 </tr>
                 <tr>
-                  <td className="col-3">Camera sau:</td>
+                  <td className="col-3 text-left font-weight-bold">
+                    Camera sau:
+                  </td>
                   <td className="col-5">{cameraSau}</td>
                 </tr>
               </tbody>
