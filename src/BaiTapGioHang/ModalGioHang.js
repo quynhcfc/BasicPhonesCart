@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
-const tangSP = 1;
-const giamSP = -1;
+import { giamSP, tangSP, THAY_DOI_SO_LUONG } from "./redux/constants/constants";
 
 class ModalGioHang extends Component {
   renderGioHang = () => {
@@ -134,4 +132,16 @@ let mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(ModalGioHang);
+let mapDispatchToProps = (dispatch) => {
+  return {
+    handleThayDoiSoLuong: (idSP, giaTri) => {
+      dispatch({
+        type: THAY_DOI_SO_LUONG,
+        idSP: idSP,
+        value: giaTri,
+      });
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ModalGioHang);

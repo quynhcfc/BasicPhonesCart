@@ -32,6 +32,12 @@ export default class BaiTapGioHang extends Component {
     return (
       <div>
         <div className="display-4 my-2">Giỏ hàng sử dụng redux</div>
+        <a
+          href="https://github.com/quynhcfc/CodeLaiGioHang.git"
+          className="btn btn-success"
+        >
+          Link source
+        </a>
         <ModalGioHang handleThayDoiSoLuong={this.handleThayDoiSoLuong} />
         <DanhSachSanPham />
         <ChiTietSanPham />
