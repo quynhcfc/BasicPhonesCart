@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CodeLaiGioHang/static/css/main.44ddd5a3.css",
-    "main.js": "/CodeLaiGioHang/static/js/main.8aa19857.js",
+    "main.js": "/CodeLaiGioHang/static/js/main.15bb1f66.js",
     "static/js/787.f055211e.chunk.js": "/CodeLaiGioHang/static/js/787.f055211e.chunk.js",
     "index.html": "/CodeLaiGioHang/index.html",
     "main.44ddd5a3.css.map": "/CodeLaiGioHang/static/css/main.44ddd5a3.css.map",
-    "main.8aa19857.js.map": "/CodeLaiGioHang/static/js/main.8aa19857.js.map",
+    "main.15bb1f66.js.map": "/CodeLaiGioHang/static/js/main.15bb1f66.js.map",
     "787.f055211e.chunk.js.map": "/CodeLaiGioHang/static/js/787.f055211e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44ddd5a3.css",
-    "static/js/main.8aa19857.js"
+    "static/js/main.15bb1f66.js"
   ]
 }
