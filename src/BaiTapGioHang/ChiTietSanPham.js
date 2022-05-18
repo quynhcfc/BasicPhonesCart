@@ -8,8 +8,13 @@ class ChiTietSanPham extends Component {
     return (
       <div className="container">
         <div className="row mx-0 py-3 border">
-          <div className="col-5">
-            <img src={hinhAnh} alt="" style={{ width: "60%" }} />
+          <div className="col-5 ">
+            <img
+              src={hinhAnh}
+              alt=""
+              style={{ width: "60%" }}
+              className="img-phone-scale"
+            />
           </div>
           <div className="col-7">
             <h3>Thông số kỹ thuật</h3>

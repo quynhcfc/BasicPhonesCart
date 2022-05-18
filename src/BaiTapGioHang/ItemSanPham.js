@@ -11,7 +11,7 @@ class ItemSanPham extends Component {
           <img
             className="card-img-top mx-auto img-phone-scale"
             src={hinhAnh}
-            alt="Card image cap"
+            alt="Card image"
             style={{ width: "50%", height: "200px", objectFit: "cover" }}
             onClick={() => {
               this.props.handleXemChiTietSP(this.props.item);

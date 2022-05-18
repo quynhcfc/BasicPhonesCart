@@ -5,13 +5,7 @@ import ItemSanPham from "./ItemSanPham";
 class DanhSachSanPham extends Component {
   renderDanhSachSanPham = () => {
     return this.props.danhSachSanPham?.map((item, index) => {
-      return (
-        <ItemSanPham
-          item={item}
-          key={index}
-          handleThayDoiSoLuong={this.props.handleThayDoiSoLuong}
-        />
-      );
+      return <ItemSanPham item={item} key={index} />;
     });
   };
 

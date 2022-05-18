@@ -1,7 +1,7 @@
 export const dataPhones = [
   {
     maSP: 1,
-    tenSP: "VinSmart Live",
+    tenSP: "Vivo",
     manHinh: "AMOLED, 6.2, Full HD+",
     heDieuHanh: "Android 9.0 (Pie)",
     cameraTruoc: "20 MP",

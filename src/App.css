@@ -38,7 +38,7 @@
 }
 
 .img-phone-scale {
-  transition: all 1s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .img-phone-scale:hover {

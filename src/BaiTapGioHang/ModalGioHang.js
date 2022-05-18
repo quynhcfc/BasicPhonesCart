@@ -96,8 +96,8 @@ class ModalGioHang extends Component {
                   <table className="table">
                     <thead>
                       <td className="font-weight-bold">Mã SP</td>
-                      <td className="font-weight-bold">Hình ảnh</td>
                       <td className="font-weight-bold">Tên sản phẩm</td>
+                      <td className="font-weight-bold">Hình ảnh</td>
                       <td className="font-weight-bold">Giá (vnđ)</td>
                       <td className="font-weight-bold">Số lượng</td>
                       <td className="font-weight-bold">Thành tiền (vnđ)</td>

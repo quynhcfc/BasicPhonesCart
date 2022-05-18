@@ -11,23 +11,6 @@ export default class BaiTapGioHang extends Component {
     gioHang: [],
   };
 
-  handleThayDoiSoLuong = (idSP, giaTri) => {
-    let gioHangCopy = [...this.state.gioHang];
-
-    let indexSP = this.state.gioHang.findIndex((index) => {
-      return index.maSP == idSP;
-    });
-
-    if (indexSP !== -1) {
-      gioHangCopy[indexSP].soLuong += giaTri;
-
-      gioHangCopy[indexSP].soLuong === 0 && gioHangCopy.splice(indexSP, 1);
-    }
-    this.setState({
-      gioHang: gioHangCopy,
-    });
-  };
-
   render() {
     return (
       <div>
@@ -38,7 +21,7 @@ export default class BaiTapGioHang extends Component {
         >
           Link source
         </a>
-        <ModalGioHang handleThayDoiSoLuong={this.handleThayDoiSoLuong} />
+        <ModalGioHang />
         <DanhSachSanPham />
         <ChiTietSanPham />
       </div>
