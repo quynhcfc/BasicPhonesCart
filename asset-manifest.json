@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CodeLaiGioHang/static/css/main.60325fc8.css",
-    "main.js": "/CodeLaiGioHang/static/js/main.d1c54c6f.js",
-    "static/js/787.f055211e.chunk.js": "/CodeLaiGioHang/static/js/787.f055211e.chunk.js",
-    "index.html": "/CodeLaiGioHang/index.html",
-    "main.60325fc8.css.map": "/CodeLaiGioHang/static/css/main.60325fc8.css.map",
-    "main.d1c54c6f.js.map": "/CodeLaiGioHang/static/js/main.d1c54c6f.js.map",
-    "787.f055211e.chunk.js.map": "/CodeLaiGioHang/static/js/787.f055211e.chunk.js.map"
+    "main.css": "/BasicPhonesCart/static/css/main.60325fc8.css",
+    "main.js": "/BasicPhonesCart/static/js/main.f9b22eed.js",
+    "static/js/787.f055211e.chunk.js": "/BasicPhonesCart/static/js/787.f055211e.chunk.js",
+    "index.html": "/BasicPhonesCart/index.html",
+    "main.60325fc8.css.map": "/BasicPhonesCart/static/css/main.60325fc8.css.map",
+    "main.f9b22eed.js.map": "/BasicPhonesCart/static/js/main.f9b22eed.js.map",
+    "787.f055211e.chunk.js.map": "/BasicPhonesCart/static/js/787.f055211e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60325fc8.css",
-    "static/js/main.d1c54c6f.js"
+    "static/js/main.f9b22eed.js"
   ]
 }
